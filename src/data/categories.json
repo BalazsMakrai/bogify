@@ -1,0 +1,27 @@
+[
+    { "category": "Bossa Nova", "id": "10" },
+    { "category": "Drum n Bass", "id": "25" },
+    { "category": "Disco", "id": "28" },
+    { "category": "Indie Pop", "id": "110" },
+    { "category": "Punk", "id": "68" },
+    { "category": "Metal", "id": "78" },
+    { "category": "Rap", "id": "118" },
+    { "category": "Folk", "id": "445" },
+    { "category": "Techno", "id": "125" },
+    { "category": "Jazz", "id": "45" },
+    { "category": "Blues", "id": "147" },
+    { "category": "Trap", "id": "153" },
+    { "category": "Dubstep", "id": "412" },
+    { "category": "Rock", "id": "25" },
+    { "category": "Urban", "id": "16" },
+    { "category": "Hip Hop", "id": "147" },
+    { "category": "Country", "id": "183" },
+    { "category": "Funk", "id": "192" },
+    { "category": "Pop", "id": "201" },
+    { "category": "Classic", "id": "215" },
+    { "category": "K-pop", "id": "227" },
+    { "category": "Salsa", "id": "236" },
+    { "category": "House", "id": "248" },
+    { "category": "Electro", "id": "259" }
+  ]
+  
