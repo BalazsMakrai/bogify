@@ -30,9 +30,9 @@
                   <img 
                     class="rounded-full" 
                     width="27"
-                    src="https://yt3.ggpht.com/e9o-24_frmNSSVvjS47rT8qCHgsHNiedqgXbzmrmpsj6H1ketcufR1B9vLXTZRa30krRksPj=s88-c-k-c0x00ffffff-no-rj-mo"
+                    src="https://yt3.ggpht.com/yti/AHyvSCC087C8Qmyp3f5T2tKz1WJOqYjpVZeUJ8U0gkwA4w=s88-c-k-c0x00ffffff-no-rj-mo"
                   >
-                  <div class="text-white text-[14px] ml-1.5 font-semibold">John Weeks Dev</div>
+                  <div class="text-white text-[14px] ml-1.5 font-semibold">Balázs Makrai</div>
                   <ChevronDown v-if="!openMenu" @click="openMenu = true" fillColor="#FFFFFF" :size="25" />
                   <ChevronUp v-else @click="openMenu = false" fillColor="#FFFFFF" :size="25" />
               </div>
