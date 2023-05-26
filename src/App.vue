@@ -28,10 +28,10 @@
           <img
             class="rounded-full"
             width="27"
-            src="https://yt3.ggpht.com/yti/AHyvSCC087C8Qmyp3f5T2tKz1WJOqYjpVZeUJ8U0gkwA4w=s88-c-k-c0x00ffffff-no-rj-mo"
+            src="https://yt3.ggpht.com/e9o-24_frmNSSVvjS47rT8qCHgsHNiedqgXbzmrmpsj6H1ketcufR1B9vLXTZRa30krRksPj=s88-c-k-c0x00ffffff-no-rj-mo"
           />
           <div class="text-white text-[14px] ml-1.5 font-semibold">
-            Balázs Makrai
+            John Weeks Dev
           </div>
           <ChevronDown
             v-if="!openMenu"
@@ -141,28 +141,29 @@
     <div class="mt-[70px]"></div>
     <RouterView />
     <div class="mb-[100px]"></div>
-    <MusicPlayer  />
   </div>
+
+  <MusicPlayer v-if="currentTrack" />
 </template>
+
 <script setup>
 import { ref, onMounted } from "vue";
 import { RouterLink, RouterView } from "vue-router";
-import { storeToRefs } from "pinia";
-import { useSongStore } from "./stores/song";
+import MenuItem from "./components/MenuItem.vue";
+import MusicPlayer from "./components/MusicPlayer.vue";
 import ChevronUp from "vue-material-design-icons/ChevronUp.vue";
 import ChevronDown from "vue-material-design-icons/ChevronDown.vue";
 import ChevronRight from "vue-material-design-icons/ChevronRight.vue";
 import ChevronLeft from "vue-material-design-icons/Chevronleft.vue";
-import MenuItem from "./components/MenuItem.vue";
-import MusicPlayer from "./components/MusicPlayer.vue";
-const openMenu = ref(false);
+
+import { useSongStore } from "./stores/song";
+import { storeToRefs } from "pinia";
 const useSong = useSongStore();
 const { isPlaying, currentTrack } = storeToRefs(useSong);
-onMounted(()=>{
-    isPlaying.value=false;
-})
-const toggleMenu = () => {
-  openMenu.value = !openMenu.value;
-};
 
+onMounted(() => {
+  isPlaying.value = false;
+});
+
+let openMenu = ref(false);
 </script>
