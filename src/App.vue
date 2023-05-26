@@ -28,10 +28,10 @@
           <img
             class="rounded-full"
             width="27"
-            src="https://yt3.ggpht.com/e9o-24_frmNSSVvjS47rT8qCHgsHNiedqgXbzmrmpsj6H1ketcufR1B9vLXTZRa30krRksPj=s88-c-k-c0x00ffffff-no-rj-mo"
+            src="https://lh3.googleusercontent.com/ogw/AOLn63Ghjb6JjOumjwJaBMoUUHcR_KaGoNx8IdroMfHX6Q=s32-c-mo"
           />
           <div class="text-white text-[14px] ml-1.5 font-semibold">
-            John Weeks Dev
+            Balázs Makrai
           </div>
           <ChevronDown
             v-if="!openMenu"
