@@ -38,7 +38,7 @@
             <div class="flex-col items-center justify-center">
                 <div class="buttons flex items-center justify-center h-[30px]">
                     <button class="mx-2">
-                        <SkipBackward fillColor="#FFFFFF" :size="25" @click="useSong.prevSong(currentTrack)"/>
+                        <SkipBackward v-show="currentTrack.id>1" fillColor="#FFFFFF" :size="25" @click="useSong.prevSong(currentTrack)"/>
                     </button>
                     <button class="p-1 rounded-full mx-3 bg-white" @click="useSong.playOrPauseThisSong(currentArtist, currentTrack)">
                         <Play v-if="!isPlaying" fillColor="#181818" :size="25" />
